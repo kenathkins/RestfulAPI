@@ -28,8 +28,6 @@ public class EncryptedDataSourceFactory implements FactoryBean<Object> {
 		this.properties = inProperties;  
 
 		String originalUsername = properties.getProperty("user");  
-		System.out.println(properties.getProperty("password"));
-		System.out.println(properties.getProperty("user"));
 		
         String originalPassword = properties.getProperty("password");  
 
