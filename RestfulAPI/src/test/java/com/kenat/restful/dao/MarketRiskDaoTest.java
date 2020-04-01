@@ -22,7 +22,7 @@ public class MarketRiskDaoTest extends BaseTest{
 		MarketRisk mRisk = mRiskDao.queryById(id);
 		System.out.println(mRisk.toString());
 		
-		fail("Not yet implemented");
+//		fail("Not yet implemented");
 	}
 
 	@Test
@@ -34,7 +34,7 @@ public class MarketRiskDaoTest extends BaseTest{
 			System.out.println("Current entry = " + marketRisk);
 		}
 		
-		fail("Not yet implemented");
+//		fail("Not yet implemented");
 	}
 	
 	@Test
@@ -49,7 +49,7 @@ public class MarketRiskDaoTest extends BaseTest{
 		}else {
 			System.out.println("Update failed");
 		}
-		fail("Not yet implemented");
+//		fail("Not yet implemented");
 	}
 	
 }
