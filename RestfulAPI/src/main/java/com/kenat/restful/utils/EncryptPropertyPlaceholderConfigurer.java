@@ -9,8 +9,14 @@ public class EncryptPropertyPlaceholderConfigurer extends PropertyPlaceholderCon
 	@Override
 	protected String convertProperty(String propertyName, String propertyValue) {
 		if (propertyName.contains(PropertyConstant.JDBC_PASSWORD)){
-			propertyValue = propertyValue.substring(0,8);
-			System.out.println("Test string is " + propertyValue);
+//			propertyValue = propertyValue.substring(0,8);
+			try {
+				propertyValue = AESUtil.decryptByAES(propertyValue);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
 		}
 		return propertyValue;
 	}
