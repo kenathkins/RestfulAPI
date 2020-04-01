@@ -4,9 +4,7 @@ import java.util.List;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.stereotype.Component;
 
-import com.kenat.restful.dao.MarketRiskDao;
 import com.kenat.restful.entity.MarketRisk;
 import com.kenat.restful.service.IMarketRiskService;
 import com.kenat.restful.utils.JSONUtil;
