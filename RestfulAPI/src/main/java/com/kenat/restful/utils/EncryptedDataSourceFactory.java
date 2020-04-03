@@ -33,14 +33,14 @@ public class EncryptedDataSourceFactory implements FactoryBean<Object> {
 
         if (originalUsername != null){  
             String newUsername = decryptDESUsername(originalUsername);  
-            System.out.println("The new username is " + newUsername);
+//            System.out.println("The new username is " + newUsername);
             properties.put("user", "root");  
 
         }  
 
         if (originalPassword != null){  
             String newPassword = decryptDESPassword(originalPassword);  
-            System.out.println("The new password is " + newPassword);
+//            System.out.println("The new password is " + newPassword);
 
             properties.put("password", "kenat515");  
 

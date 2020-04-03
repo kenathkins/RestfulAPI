@@ -45,16 +45,16 @@
 		<property name="idleConnectionTestPeriod" value="18000" />
 	</bean>
 	
-	<!-- 2.1 加密解密自定义类 -->
+	<!-- 2.1 加密解密自定义类 
 	<bean id="encryptProperty" class="com.kenat.restful.utils.EncryptedDataSourceFactory">
 		<property name="properties">
-				<!-- 方法1 -->
 			<props>
 				<prop key="user">${jdbc.username}</prop>  
         		<prop key="password">${jdbc.password}</prop> 
 			</props>
 		</property>
 	</bean>
+	-->
 	
 	<!-- 3.配置SqlSessionFactory对象 -->
 	<bean id="sqlSessionFactory"
